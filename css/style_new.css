@@ -1,0 +1,43 @@
+p.video {
+  position: relative;
+  z-index: 1;
+}
+p.video iframe {
+  position: absolute;
+  top: -26px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 5;
+}
+p.video img {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  p.video iframe {
+    width: 92%;
+    height: 92%;
+    top: -5%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .sp_only {
+    display: none !important;
+  }
+
+  .pc_only {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pc_only {
+    display: none !important;
+  }
+
+  .sp_only {
+    display: block !important;
+  }
+}

@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "normalize.css";
+@import "default.css";
+
+@import "style_new.css";
+
+/*******************
+
+LP style
+
+********************/
+/* base */
+/* font
+--------------------------------------------------*/
+html {
+  font-size: 14px;
+  font-size: 3.7333vw;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    "Mayryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #303030;
+  line-height: 1.5;
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 28px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+span {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/* clear
+--------------------------------------------------*/
+.cl {
+  clear: both;
+}
+.clx:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clx {
+  min-height: 1px;
+}
+* html .clx {
+  height: 1px;
+  /*\*/ /*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+/*--------------------------------------
+sp-style
+-----------------------------------------*/
+img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: bottom;
+}
+img.img-t {
+  vertical-align: top;
+}
+body {
+  width: 100%;
+}
+.pl {
+  position: relative;
+}
+.fv-btn {
+  position: absolute;
+  bottom: 19%;
+  right: 0;
+  left: 0;
+  width: 99%;
+  margin: 0 auto;
+}
+.fv-btn_02 {
+  position: absolute;
+  bottom: 1%;
+  right: 0;
+  left: 0;
+  width: 99%;
+  margin: 0 auto;
+}
+.fv-btn_03 {
+  position: absolute;
+  bottom: 1%;
+  right: 0;
+  left: 0;
+  width: 99%;
+  margin: 0 auto;
+}
+.fv-btn_04 {
+  position: absolute;
+  bottom: 1%;
+  right: 0;
+  left: 0;
+  width: 99%;
+  margin: 0 auto;
+}
+.gif {
+  position: absolute;
+  bottom: 1%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  /*padding: 35px 15px 0 15px;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.gif figure {
+  width: 41% !important;
+  margin: 0 auto 4% !important;
+}
+.gif img {
+}
+.cv-btn {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  margin: 0 auto;
+  width: 93.5%;
+}
+.cv-btn2 {
+  position: absolute;
+  top: 20%;
+  right: 5.5%;
+  margin: 0 auto;
+  width: 49.2%;
+}
+.btn {
+  position: absolute;
+  top: -10%;
+  right: 0;
+  left: 0;
+  width: 99%;
+  margin: 0 auto;
+}
+.btn2 {
+  width: 99%;
+  margin: 2% auto;
+}
+.bg {
+  background: #0059d4;
+}
+.details-box table th {
+  background: #0456af;
+  color: #fff;
+  text-align: center;
+  padding: 1.2%;
+}
+.details-box table td {
+  text-align: center;
+  padding: 2%;
+}
+.details-box table tr:nth-of-type(6) td {
+  text-align: left;
+  padding: 4% 3%;
+}
+.normal-btn {
+  margin: 5% auto 0;
+}
+.mb5 {
+  margin-bottom: 5%;
+}
+.mg5 {
+  margin: 5% auto;
+}
+.mt0 {
+  margin-top: 0;
+}
+.mt4_2 {
+  margin-top: -4.2%;
+}
+
+/*-------------------------------------------
+footer
+-----------------------------------------------*/
+#copy {
+  background: #0456af;
+
+  text-align: center;
+  font-size: 0.72em;
+  color: #fff;
+
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  box-sizing: border-box;
+  padding: 1em 0 1em;
+  line-height: 1.7;
+}
