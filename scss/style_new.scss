@@ -1,0 +1,78 @@
+
+// ベンダープレフィックスを自動で付与する
+$set-prefix: '' , -moz- , -webkit-;
+
+// 値にプレフィックスを付与
+@mixin ValueSetPrefix($name, $value) {
+ 
+    @each $prefix in $set-prefix {
+ 
+        #{$name}: #{$prefix}$value;
+
+    }
+ 
+}
+
+@mixin s_hdr($text-align: center, $display: flex, $justify-content: center, $align-items: center, $margin-top: -70px, $margin-bottom: 40px, $padding-bottom: 40px) {
+  text-align: $text-align;
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+  padding-bottom: $padding-bottom;
+}
+
+@mixin item_box($display: flex,$flexflow: row wrap,$justify-content: space-between) {
+  display: $display;
+  flex-flow: $flexflow;
+  justify-content: $justify-content;
+}
+
+
+p {
+
+  &.video {
+    position: relative;
+    z-index: 1;
+    iframe {
+      position: absolute;
+      top: -26px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 5;
+    }
+    img {
+      position: relative;
+      z-index: 2;
+    }
+    @media screen and (max-width: 767px) {
+      iframe {
+        width: 92%;
+        height: 92%;
+        top: -5%;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  .sp_only {
+    display: none !important;
+  }
+  .pc_only {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pc_only {
+    display: none !important;
+  }
+  .sp_only {
+    display: block !important;
+  }
+}
